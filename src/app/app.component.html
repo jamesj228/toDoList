@@ -1,2 +1,8 @@
 <h1>{{title}}</h1>
-<app-toDoList></app-toDoList>
+<nav>
+  <a routerLink="./view" routerLinkActive="active">Add ToDo Item</a>
+  <a routerLink="./items" routerLinkActive="active">View ToDo List</a>
+</nav>
+
+
+<router-outlet></router-outlet>
