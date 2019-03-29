@@ -21,7 +21,8 @@ export class ItemsComponent implements OnInit {
 
   ngOnInit() {
     for(var i = 0; i < window.localStorage.length; i++) {
-      window.localStorage.getItem(String(window.localStorage.key(i)));
+
+      this.windowItems.push(JSON.parse(window.localStorage.getItem(window.localStorage.key(i))));
     }
   }
 
