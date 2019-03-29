@@ -1,16 +1,18 @@
-<h2>Items</h2>
-<ul class="items">
-  <li *ngFor="let item of items"
-    [class.selected]="item === selectedItem"
-    (click)="onSelect(item)">
-    <span class="badge">{{item.id}}</span> {{item.name}}
-  </li>
-  <li *ngFor="let added of windowItems"
-    [class.selected]="item === selectedItem"
-    (click)="onSelect(added)">
-    <span class="badge">{{added.id}}</span> {{added.name}}
+<div id="itemList">
+  <h2>Items</h2>
+  <ul class="items">
+    <li *ngFor="let item of items"
+      [class.selected]="item === selectedItem"
+      (click)="onSelect(item)">
+      <span class="badge">{{item.id}}</span> {{item.name}}
     </li>
-</ul>
+    <li *ngFor="let added of windowItems"
+      [class.selected]="added === selectedItem"
+      (click)="onSelect(added)">
+      <span class="badge">{{added.id}}</span> {{added.name}}
+      </li>
+  </ul>
+</div>
 
 <div *ngIf="selectedItem">
 

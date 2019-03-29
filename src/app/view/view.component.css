@@ -6,6 +6,8 @@
   background: #6e6e6e;
 }
 
-textarea.box {
-  clear:both;
+#textBox{
+  clear: both;
+  width: 20%;
+  margin: 0 auto;
 }

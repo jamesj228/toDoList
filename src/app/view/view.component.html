@@ -1,5 +1,5 @@
 <div id="textBox">
-  <input type="text" id="textInput" placeholder="items" [(ngModel)]="message" [disabled]="sending">
-  <div><textarea class="box" placeholder="description" rows="10" cols="33" [(ngModel)]="description"></textarea></div>
-  <button *ngIf="!sending" (click)="add()">Add</button>
+    <input type="text" id="textInput" placeholder="items" [(ngModel)]="message" [disabled]="sending" required>
+    <div><textarea class="box" placeholder="description" rows="10" cols="33" [(ngModel)]="description" required></textarea></div>
+    <button *ngIf="!sending" (click)="add()">Add</button>
 </div>
