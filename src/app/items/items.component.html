@@ -5,6 +5,11 @@
     (click)="onSelect(item)">
     <span class="badge">{{item.id}}</span> {{item.name}}
   </li>
+  <li *ngFor="let added of windowItems"
+    [class.selected]="item === selectedItem"
+    (click)="onSelect(added)">
+    <span class="badge">{{added.id}}</span> {{added.name}}
+    </li>
 </ul>
 
 <div *ngIf="selectedItem">
